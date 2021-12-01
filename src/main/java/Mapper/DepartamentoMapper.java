@@ -3,6 +3,7 @@ package Mapper;
 import DTO.DepartamentoDTO;
 import Model.Departamento;
 
+
 public class DepartamentoMapper extends BaseMapper<Departamento, DepartamentoDTO>{
     @Override
     public Departamento fromDTO(DepartamentoDTO item) {
@@ -21,4 +22,6 @@ public class DepartamentoMapper extends BaseMapper<Departamento, DepartamentoDTO
                 historialJefes(item.getHistorialJefes())
                 .build();
     }
+
+
 }
