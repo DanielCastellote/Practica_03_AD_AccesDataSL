@@ -23,18 +23,18 @@ public class DepartService extends BaseService<Departamento,Long, DepartamentoRe
         return mapper.toDTO(this.getById(id));
     }
 
-    public DepartamentoDTO postDepartamentos(DepartamentoDTO categoryDTO) throws SQLException {
-        Departamento res = this.save(mapper.fromDTO(categoryDTO));
+    public DepartamentoDTO postDepartamentos(DepartamentoDTO departamentoDTO) throws SQLException {
+        Departamento res = this.save(mapper.fromDTO(departamentoDTO));
         return mapper.toDTO(res);
     }
 
-    public DepartamentoDTO updateDepartamentos(DepartamentoDTO categoryDTO) throws SQLException {
-        Departamento res = this.update(mapper.fromDTO(categoryDTO));
+    public DepartamentoDTO updateDepartamentos(DepartamentoDTO departamentoDTO) throws SQLException {
+        Departamento res = this.update(mapper.fromDTO(departamentoDTO));
         return mapper.toDTO(res);
     }
 
-    public DepartamentoDTO deleteDepartamentos(DepartamentoDTO categoryDTO) throws SQLException {
-        Departamento res = this.delete(mapper.fromDTO(categoryDTO));
+    public DepartamentoDTO deleteDepartamentos(DepartamentoDTO departamentoDTO) throws SQLException {
+        Departamento res = this.delete(mapper.fromDTO(departamentoDTO));
         return mapper.toDTO(res);
     }
 }

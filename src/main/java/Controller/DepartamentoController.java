@@ -32,8 +32,8 @@ public class DepartamentoController {
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(depService.getAllDepartamentos());
         } catch (SQLException e) {
-            System.err.println("Error CategoryController en getAllCategories: " + e.getMessage());
-            return "Error CategoryController en getAllCategories: " + e.getMessage();
+            System.err.println("Error DepartamentoController en getAllDepartamentos: " + e.getMessage());
+            return "Error DepartamentoController en getAllDepartamentos:" + e.getMessage();
         }
     }
 
@@ -43,8 +43,8 @@ public class DepartamentoController {
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(depService.getDepartamentosById(id));
         } catch (SQLException e) {
-            System.err.println("Error CategoryController en getCategoryById: " + e.getMessage());
-            return "Error CategoryController en getCategoryById: " + e.getMessage();
+            System.err.println("Error DepartamentoController en getDepartamentoById: " + e.getMessage());
+            return "Error DepartamentoController en getDepartamentoById:" + e.getMessage();
         }
     }
 
@@ -53,8 +53,8 @@ public class DepartamentoController {
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(depService.postDepartamentos(deparDTO));
         } catch (SQLException e) {
-            System.err.println("Error CategoryController en postCategory: " + e.getMessage());
-            return "Error CategoryController en postCategory: " + e.getMessage();
+            System.err.println("Error DepartamentoController en postDepartamento: " + e.getMessage());
+            return "Error DepartamentoController en postDepartamento: " + e.getMessage();
         }
     }
 
@@ -63,8 +63,8 @@ public class DepartamentoController {
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(depService.updateDepartamentos(deparDTO));
         } catch (SQLException e) {
-            System.err.println("Error CategoryController en updateCategory: " + e.getMessage());
-            return "Error CategoryController en updateCategory: " + e.getMessage();
+            System.err.println("Error DepartamentoController en updateDepartamentos: " + e.getMessage());
+            return "Error DepartamentoController en updateDepartamentos: " + e.getMessage();
         }
     }
 
@@ -73,8 +73,8 @@ public class DepartamentoController {
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(depService.deleteDepartamentos(deparDTO));
         } catch (SQLException e) {
-            System.err.println("Error CategoryController en deleteCategory: " + e.getMessage());
-            return "Error CategoryController en deleteCategory: " + e.getMessage();
+            System.err.println("Error DepartamentosController en deleteDepartamentos: " + e.getMessage());
+            return "Error DepartamentosController en deleteDepartamentos: " + e.getMessage();
         }
     }
 }
