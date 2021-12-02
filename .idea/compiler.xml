@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Practica-03-AD-AccesDataSL" />
+        <module name="Practica_03_AD_AccesDataSL-develop" />
       </profile>
     </annotationProcessing>
   </component>
