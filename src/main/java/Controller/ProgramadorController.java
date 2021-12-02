@@ -29,7 +29,9 @@ public class ProgramadorController {
 
     public String getAllProgramadoresJSON() {
         try {
-            // Vamos a devolver el JSON de las categorías
+
+            // Vamos a devolver el JSON de los programadores
+
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(progService.getAllProgramadores());
         } catch (SQLException e) {
@@ -39,7 +41,9 @@ public class ProgramadorController {
     }
     public String getProgramadoresByIdJSON(Long id) {
         try {
-            // Vamos a devolver el JSON de las categorías
+
+            // Vamos a devolver el JSON de los programadores
+
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(progService.getProgamadoresById(id));
         } catch (SQLException e) {

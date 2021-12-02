@@ -26,7 +26,9 @@ public class ProyectosController {
     }
     public String getAllProyectosJSON() {
         try {
-            // Vamos a devolver el JSON de las categorías
+
+            // Vamos a devolver el JSON de los proyectos
+
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(proytService.getAllProyectos());
         } catch (SQLException e) {
@@ -37,7 +39,9 @@ public class ProyectosController {
 
     public String getProyectosByIdJSON(Long id) {
         try {
-            // Vamos a devolver el JSON de las categorías
+
+            // Vamos a devolver el JSON de los proyectos
+
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(proytService.getDProyectosById(id));
         } catch (SQLException e) {

@@ -28,7 +28,7 @@ public class DepartamentoController {
 
     public String getAllDepartamentosJSON() {
         try {
-            // Vamos a devolver el JSON de las categorías
+            // Vamos a devolver el JSON de los departamentos
             final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
             return prettyGson.toJson(depService.getAllDepartamentos());
         } catch (SQLException e) {
