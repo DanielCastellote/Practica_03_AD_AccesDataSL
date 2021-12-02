@@ -3,10 +3,7 @@ package Service;
 import DTO.DepartamentoDTO;
 import Mapper.DepartamentoMapper;
 import Model.Departamento;
-import Repository.CRUD_Repositorio;
 import Repository.DepartamentoRepositorio;
-
-import java.net.IDN;
 import java.sql.SQLException;
 import java.util.List;
 

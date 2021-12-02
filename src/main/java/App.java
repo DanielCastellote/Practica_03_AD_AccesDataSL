@@ -16,5 +16,10 @@ public class App {
         if (properties.readProperty("database.init").equals("true"))
             blog.initDataBase();
 
+
+
+        Data.getInstance().Programadores();
+        Data.getInstance().Prroyectos();
+        Data.getInstance().Departamentos();
     }
 }

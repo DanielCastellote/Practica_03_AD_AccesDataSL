@@ -1,6 +1,6 @@
 package TestRepositorio;
 
-import Model.Departamento;
+
 import Model.Programador;
 import Repository.ProgramadorRepositorio;
 import org.junit.jupiter.api.Assertions;
